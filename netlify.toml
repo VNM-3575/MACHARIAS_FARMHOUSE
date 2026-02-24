@@ -1,0 +1,25 @@
+# Netlify configuration for MACHARIA'S FARMHOUSE admin app
+
+[build]
+# Build command: install deps and build admin React app
+command = "cd admin-app && npm install && npm run build && cd .."
+# Publish directory (admin React app builds to public/admin-app)
+publish = "public/admin-app"
+
+[[redirects]]
+# SPA routing: redirect all non-file requests to index.html
+from = "/*"
+to = "/index.html"
+status = 200
+
+[[headers]]
+# Cache static assets longer
+for = "/*"
+[headers.values]
+Cache-Control = "max-age=3600"
+
+[[headers]]
+# Disable caching for index.html so updates are seen
+for = "/index.html"
+[headers.values]
+Cache-Control = "max-age=0, must-revalidate"
