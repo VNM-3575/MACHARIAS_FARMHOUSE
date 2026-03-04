@@ -1,10 +1,16 @@
 # Netlify configuration for MACHARIA'S FARMHOUSE admin app
 
+  
 [build]
-# Build command: install deps and build admin React app
-command = "cd admin-app && npm install && npm run build && cd .."
-# Publish directory (admin React app builds to public/admin-app)
-publish = "public/admin-app"
+  # We create the public folder, then move specific files to their final names
+  command = """
+    mkdir -p public && 
+    cp my-submodule/home.html public/index.html && 
+    cp my-submodule/about-us.html public/about.html && 
+    cp my-submodule/services-v2.html public/services.html &&
+    cp my-submodule/*.css public/
+  """
+  publish = "index.html"
 
 [[redirects]]
 # SPA routing: redirect all non-file requests to index.html
