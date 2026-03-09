@@ -6,3 +6,11 @@
  from = "/"
  to = "/home.html"
 
+[build]
+  # This tells Netlify to look inside 'main_directory' for your HTML and CSS
+  publish = "main_directory" 
+
+[[redirects]]
+  from = "/"
+  to = "/home.html"
+  status = 200
