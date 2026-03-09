@@ -4,4 +4,5 @@
 
 [[redirects]]
  from = "/"
- to =""/home.html"
+ to = "/home.html"
+
