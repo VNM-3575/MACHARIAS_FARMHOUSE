@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign Up — MACHARIA'S FARMHOUSE</title>
+    <style>
+      :root {
+        --accent: #8b3e2f;
+        --muted: #6b7280;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+        margin: 0;
+        background: var(--bg);
+        color: #0f172a;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 32px auto;
+        padding: 20px;
+      }
+      .card {
+        background: #fff;
+        padding: 22px;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      }
+      fieldset {
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+      label {
+        display: block;
+        margin: 12px 0 6px;
+        font-weight: 600;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"],
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #e6e9ee;
+        border-radius: 6px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        margin-top: 18px;
+      }
+      .btn {
+        padding: 10px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+      }
+      .btn.primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <h2 style="margin: 0 0 8px 0; color: var(--accent)">
+          Create an Account
+        </h2>
+        <p class="muted">
+          Please provide your details and select products/services you're
+          interested in.
+        </p>
+
+        <form
+          id="signupForm"
+          action="#"
+          method="post"
+          onsubmit="return handleSignup(event);"
+        >
+          <label for="fullname">Full Name</label>
+          <input
+            id="fullname"
+            name="fullname"
+            type="text"
+            placeholder="Jane Doe"
+            required
+          />
+
+          <div class="row">
+            <div>
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="age">Age</label>
+              <input
+                id="age"
+                name="age"
+                type="number"
+                min="16"
+                max="120"
+                placeholder="e.g. 35"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 6px">
+            <div>
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone">Phone number</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="+2547XXXXXXXX"
+                pattern="\\+?[0-9\-\s]{7,20}"
+                required
+              />
+            </div>
+          </div>
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            minlength="6"
+            required
+          />
+
+          <label for="confirm">Confirm Password</label>
+          <input
+            id="confirm"
+            name="confirm"
+            type="password"
+            minlength="6"
+            required
+          />
+
+          <h3 style="margin-top: 16px; color: var(--accent)">
+            Products & Services Interested In
+          </h3>
+          <p class="muted">Select all that apply</p>
+
+          <fieldset>
+            <div class="services">
+              <label class="checkbox"
+                ><input
+                  type="checkbox"
+                  name="services"
+                  value="breeding_stock"
+                />
+                Breeding stock (sows & boars)</label
+              >
+              <label class="checkbox"
+                ><input type="checkbox" name="services" value="piglets" />
+                Weaned piglets</label
+              >
+              <label class="checkbox"
+                ><input type="checkbox" name="services" value="equipment" />
+                Farming equipment & setup</label
+              >
+              <label class="checkbox"
+                ><input type="checkbox" name="services" value="feeds" />
+                Nutritional feeds</label
+              >
+              <label class="checkbox"
+                ><input type="checkbox" name="services" value="consulting" />
+                Business management / consulting</label
+              >
+              <label class="checkbox"
+                ><input type="checkbox" name="services" value="custom" /> Custom
+                orders / other</label
+              >
+            </div>
+          </fieldset>
+
+          <p class="muted" style="margin-top: 10px">
+            You can choose multiple items. We'll use these preferences to send
+            relevant offers and availability updates.
+          </p>
+
+          <div class="actions">
+            <button type="submit" class="btn primary">Create Account</button>
+            <a
+              href="welcome.html"
+              class="btn"
+              style="
+                background: #eef2f6;
+                color: var(--accent);
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              "
+              >Cancel</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function handleSignup(e) {
+        e.preventDefault();
+        const pw = document.getElementById("password").value;
+        const confirm = document.getElementById("confirm").value;
+        if (pw !== confirm) {
+          alert("Passwords do not match");
+          return false;
+        }
+
+        const fullname = document.getElementById("fullname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const gender = document.getElementById("gender").value;
+        const age = document.getElementById("age").value;
+
+        const checked = Array.from(
+          document.querySelectorAll('input[name="services"]:checked'),
+        ).map((n) => n.value);
+
+        if (!fullname || !email || !phone) {
+          alert("Please complete required fields");
+          return false;
+        }
+
+        // Placeholder behavior: show summary. Replace with server call in production.
+        const summary = `Account request:\nName: ${fullname}\nGender: ${gender}\nAge: ${age}\nEmail: ${email}\nPhone: ${phone}\nSelected: ${checked.join(", ") || "None"}`;
+        alert(
+          summary +
+            "\n\n(This is a placeholder submission in the static demo.)",
+        );
+        return false;
+      }
+    </script>
+  </body>
+</html>

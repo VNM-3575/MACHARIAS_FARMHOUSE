@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Business Management Support - Macharia Pig Farms</title>
+    <style>
+      :root {
+        --accent: #8b3e2f;
+        --muted: #6b7280;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+        line-height: 1.6;
+        color: #0f172a;
+        margin: 0;
+        background: var(--bg);
+      }
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e6e9ee;
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        color: var(--accent);
+      }
+      nav {
+        margin-left: auto;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 16px;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      .page-hero {
+        background: linear-gradient(135deg, var(--accent), #c85a54);
+        color: #fff;
+        padding: 40px 24px;
+        border-radius: 10px;
+        margin-top: 18px;
+      }
+      .page-hero h1 {
+        margin: 0 0 12px 0;
+        font-size: 2rem;
+      }
+      .page-hero p {
+        margin: 0;
+        font-size: 1.1rem;
+        opacity: 0.95;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 24px 0;
+      }
+      @media (max-width: 600px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .gallery-img {
+        width: 100%;
+        height: 280px;
+        background: #e6e9ee;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .content {
+        background: #fff;
+        padding: 28px;
+        border-radius: 10px;
+        margin-top: 24px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+      }
+
+      .content h2 {
+        color: var(--accent);
+        margin-top: 28px;
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+      }
+      .content h2:first-child {
+        margin-top: 0;
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 16px 0;
+      }
+      @media (max-width: 600px) {
+        .service-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .service-item {
+        background: #f8fafc;
+        padding: 20px;
+        border-radius: 6px;
+        border-left: 4px solid var(--accent);
+      }
+
+      .service-item h3 {
+        margin: 0 0 12px 0;
+        color: var(--accent);
+        font-size: 1.1rem;
+      }
+
+      .service-item p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .benefit-list {
+        background: #f8fafc;
+        padding: 20px;
+        border-left: 4px solid var(--accent);
+        border-radius: 6px;
+        margin: 16px 0;
+      }
+
+      .benefit-list h3 {
+        margin: 0 0 12px 0;
+        color: var(--accent);
+      }
+
+      .benefit-list ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .benefit-list li {
+        margin: 8px 0;
+        color: var(--muted);
+      }
+
+      .process-box {
+        background: linear-gradient(135deg, #fff8f0, #fff);
+        padding: 20px;
+        border-radius: 6px;
+        margin: 16px 0;
+        border-left: 4px solid var(--accent);
+      }
+
+      .process-box h3 {
+        margin: 0 0 12px 0;
+        color: var(--accent);
+      }
+
+      .process-box ol {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .process-box li {
+        margin: 8px 0;
+        color: var(--muted);
+      }
+
+      .highlight-box {
+        background: #fff0e0;
+        padding: 16px;
+        border-radius: 6px;
+        border-left: 4px solid var(--accent);
+        margin: 16px 0;
+      }
+
+      .highlight-box strong {
+        color: var(--accent);
+      }
+
+      .cta-link {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 24px;
+        transition: background 0.2s;
+      }
+
+      .cta-link:hover {
+        background: #6b3028;
+      }
+
+      footer {
+        margin: 28px 0 60px;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap" style="display: flex; align-items: center">
+        <div class="brand">
+          <img
+            src="logo.png"
+            alt="Macharia's Farmhouse Logo"
+            style="height: 60px; width: auto"
+          />
+          <h1>Macharia Pig Farms</h1>
+        </div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="page-hero">
+        <h1>Business Management Support</h1>
+        <p>
+          Expert guidance on farm planning, financial management, and production
+          optimization for sustainable, profitable operations.
+        </p>
+      </section>
+
+      <div class="gallery">
+        <img
+          src="https://via.placeholder.com/500x280?text=Farm+Management"
+          alt="Farm management planning"
+          class="gallery-img"
+        />
+        <img
+          src="https://via.placeholder.com/500x280?text=Business+Growth"
+          alt="Business growth and profitability"
+          class="gallery-img"
+        />
+      </div>
+
+      <section class="content">
+        <h2>Building Profitable Pig Farming Operations</h2>
+        <p>
+          Success in pig farming requires more than quality animals and
+          equipment. Our business management services help farmers optimize
+          operations, reduce costs, and maximize profitability through proven
+          best practices and expert guidance.
+        </p>
+
+        <h2>Our Business Management Services</h2>
+
+        <div class="service-grid">
+          <div class="service-item">
+            <h3>📋 Farm Planning & Budgeting</h3>
+            <p>
+              Develop comprehensive farm plans with realistic budgets. We help
+              you set production targets, estimate costs, and project revenue
+              streams.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>📊 Production Record Tracking</h3>
+            <p>
+              Implement systems to track key metrics: piglet mortality, feed
+              conversion ratios, growth rates, and breeding performance.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>🔗 Market Linkage Support</h3>
+            <p>
+              Connect you with reliable buyers and markets. Provide guidance on
+              market prices, negotiation, and building long-term buyer
+              relationships.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>🎓 Training & Capacity Building</h3>
+            <p>
+              Conduct on-farm training on biosecurity, health management, record
+              keeping, and best practices for production efficiency.
+            </p>
+          </div>
+        </div>
+
+        <h2>Key Performance Indicators We Help Track</h2>
+
+        <div class="benefit-list">
+          <h3>Production Metrics</h3>
+          <ul>
+            <li>Feed conversion ratio (kg feed per kg weight gain)</li>
+            <li>Daily weight gain</li>
+            <li>Litter size and piglet survival rates</li>
+            <li>Time to market weight</li>
+            <li>Disease incidence and mortality rates</li>
+          </ul>
+        </div>
+
+        <div class="benefit-list">
+          <h3>Financial Metrics</h3>
+          <ul>
+            <li>Cost per kg of weight gain</li>
+            <li>Revenue per pig sold</li>
+            <li>Profit margin analysis</li>
+            <li>Return on investment (ROI)</li>
+            <li>Break-even analysis</li>
+          </ul>
+        </div>
+
+        <h2>Our Implementation Process</h2>
+
+        <div class="process-box">
+          <h3>🎯 Step-by-Step Approach</h3>
+          <ol>
+            <li>
+              <strong>Farm Assessment:</strong> Evaluate current operations,
+              identify strengths and improvement areas
+            </li>
+            <li>
+              <strong>Goal Setting:</strong> Define realistic, measurable
+              production and financial targets
+            </li>
+            <li>
+              <strong>Action Planning:</strong> Develop detailed plans for
+              achieving goals with timelines and responsibilities
+            </li>
+            <li>
+              <strong>Implementation Support:</strong> Provide hands-on guidance
+              and regular check-ins
+            </li>
+            <li>
+              <strong>Monitoring & Adjustment:</strong> Track progress,
+              celebrate wins, and adjust strategies as needed
+            </li>
+          </ol>
+        </div>
+
+        <h2>Why Professional Business Management Matters</h2>
+
+        <div class="highlight-box">
+          <p>
+            Well-managed farms typically see 20-35% higher profitability than
+            unmanaged operations. Professional planning, record-keeping, and
+            optimization can dramatically improve your bottom line.
+          </p>
+        </div>
+
+        <h2>Real Results Our Farmers Achieve</h2>
+
+        <div class="service-grid">
+          <div class="service-item">
+            <h3>💰 Increased Profitability</h3>
+            <p>
+              Through cost optimization and market linkage, farmers increase
+              profit per pig by 15-25%.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>⏱️ Faster Expansion</h3>
+            <p>
+              Proper planning and record-keeping enable confident scaling from
+              10 pigs to 100+ animals.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>🛡️ Reduced Risk</h3>
+            <p>
+              Biosecurity and health management protocols reduce disease
+              outbreaks and animal losses.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>👥 Better Buyers</h3>
+            <p>
+              Professional farmers with documented records attract premium
+              buyers and command better prices.
+            </p>
+          </div>
+        </div>
+
+        <h2>Get Started Today</h2>
+        <p>
+          Whether you're starting a new farm or optimizing an existing
+          operation, our business management experts are here to help. Request a
+          farm assessment and let's build a path to profitability together.
+        </p>
+
+        <a href="services.html" class="cta-link">← Back to Services</a>
+      </section>
+
+      <footer>&copy; 2026 Macharia Pig Farms — All rights reserved.</footer>
+    </main>
+  </body>
+</html>

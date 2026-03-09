@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Quality Feeds & Nutrition - Macharia Pig Farms</title>
+    <style>
+      :root {
+        --accent: #8b3e2f;
+        --muted: #6b7280;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+        line-height: 1.6;
+        color: #0f172a;
+        margin: 0;
+        background: var(--bg);
+      }
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e6e9ee;
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        color: var(--accent);
+      }
+      nav {
+        margin-left: auto;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 16px;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      .page-hero {
+        background: linear-gradient(135deg, var(--accent), #c85a54);
+        color: #fff;
+        padding: 40px 24px;
+        border-radius: 10px;
+        margin-top: 18px;
+      }
+      .page-hero h1 {
+        margin: 0 0 12px 0;
+        font-size: 2rem;
+      }
+      .page-hero p {
+        margin: 0;
+        font-size: 1.1rem;
+        opacity: 0.95;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 24px 0;
+      }
+      @media (max-width: 600px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .gallery-img {
+        width: 100%;
+        height: 280px;
+        background: #e6e9ee;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .content {
+        background: #fff;
+        padding: 28px;
+        border-radius: 10px;
+        margin-top: 24px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+      }
+
+      .content h2 {
+        color: var(--accent);
+        margin-top: 28px;
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+      }
+      .content h2:first-child {
+        margin-top: 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+      }
+
+      table th,
+      table td {
+        padding: 14px;
+        text-align: left;
+        border-bottom: 1px solid #e6e9ee;
+      }
+
+      table th {
+        background: #f8fafc;
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      table tr:hover {
+        background: #f8fafc;
+      }
+
+      .nutrition-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 16px 0;
+      }
+      @media (max-width: 600px) {
+        .nutrition-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .nutrition-card {
+        background: #f8fafc;
+        padding: 16px;
+        border-radius: 6px;
+        border-left: 4px solid var(--accent);
+      }
+
+      .nutrition-card h3 {
+        margin: 0 0 8px 0;
+        color: var(--accent);
+      }
+
+      .nutrition-card p {
+        margin: 8px 0;
+        color: var(--muted);
+      }
+
+      .stage-box {
+        background: linear-gradient(135deg, #fff8f0, #fff);
+        padding: 16px;
+        border-radius: 6px;
+        margin: 12px 0;
+        border-left: 4px solid var(--accent);
+      }
+
+      .stage-box h3 {
+        margin: 0 0 8px 0;
+        color: var(--accent);
+      }
+
+      .price-highlight {
+        background: #fff0e0;
+        padding: 16px;
+        border-radius: 6px;
+        margin: 16px 0;
+        border-left: 4px solid var(--accent);
+      }
+
+      .price-highlight strong {
+        color: var(--accent);
+        font-size: 1.1rem;
+      }
+
+      .cta-link {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 24px;
+        transition: background 0.2s;
+      }
+
+      .cta-link:hover {
+        background: #6b3028;
+      }
+
+      footer {
+        margin: 28px 0 60px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap" style="display: flex; align-items: center">
+        <div class="brand">
+          <img
+            src="logo.png"
+            alt="Macharia's Farmhouse Logo"
+            style="height: 60px; width: auto"
+          />
+          <h1>Macharia Pig Farms</h1>
+        </div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="page-hero">
+        <h1>Quality Feeds & Nutrition</h1>
+        <p>
+          Scientifically formulated feeds designed to maximize growth, health,
+          and profitability at every production stage.
+        </p>
+      </section>
+
+      <div class="gallery">
+        <img
+          src="https://via.placeholder.com/500x280?text=Quality+Feed+Products"
+          alt="Quality pig feeds"
+          class="gallery-img"
+        />
+        <img
+          src="https://via.placeholder.com/500x280?text=Nutrition+Formulation"
+          alt="Feed formulation process"
+          class="gallery-img"
+        />
+      </div>
+
+      <section class="content">
+        <h2>Nutrition Fundamentals</h2>
+        <p>
+          Pig nutrition must be tailored to the production stage (weaner,
+          grower, finisher) to ensure optimal health and growth. Our feeds are
+          formulated by nutrition experts to meet every pig's needs.
+        </p>
+
+        <div class="nutrition-grid">
+          <div class="nutrition-card">
+            <h3>⚡ Energy</h3>
+            <p>
+              Derived from grains (maize, barley, wheat) and fats. Essential for
+              growth, reproduction, and daily activity.
+            </p>
+          </div>
+          <div class="nutrition-card">
+            <h3>💪 Protein (Amino Acids)</h3>
+            <p>
+              Lysine is the most critical amino acid for muscle development.
+              Requirements decrease as the pig ages.
+            </p>
+          </div>
+          <div class="nutrition-card">
+            <h3>🔬 Digestive Efficiency</h3>
+            <p>
+              For piglets, highly digestible vegetable proteins and rice flour
+              are preferred as their guts are still immature.
+            </p>
+          </div>
+          <div class="nutrition-card">
+            <h3>🧂 Vitamins & Minerals</h3>
+            <p>
+              Essential for bone development, immunity, and overall health. Our
+              feeds include balanced mineral profiles.
+            </p>
+          </div>
+        </div>
+
+        <h2>Our Feed Programs by Production Stage</h2>
+
+        <div class="stage-box">
+          <h3>🐤 Starter Feed (Piglets 0–8 weeks)</h3>
+          <p>
+            Highly digestible, nutrient-dense formulation with emphasis on
+            protein and energy for rapid growth. Include probiotics for gut
+            health support.
+          </p>
+        </div>
+
+        <div class="stage-box">
+          <h3>📈 Grower Feed (8–16 weeks)</h3>
+          <p>
+            Balanced nutrition supporting steady growth. Reduced protein levels
+            as animals mature, optimized for feed conversion efficiency.
+          </p>
+        </div>
+
+        <div class="stage-box">
+          <h3>🎯 Finisher Feed (16 weeks – Market Ready)</h3>
+          <p>
+            Formulated to support rapid weight gain with adequate energy and
+            moderate protein. Result: High-quality meat at optimal market
+            weight.
+          </p>
+        </div>
+
+        <div class="stage-box">
+          <h3>👩‍🌾 Breeding Herd Nutrition</h3>
+          <p>
+            Special formulations for sows and boars supporting reproduction,
+            milk production, and herd longevity.
+          </p>
+        </div>
+
+        <h2>Commercial Feed Pricing in Kenya (2026)</h2>
+
+        <div class="price-highlight">
+          <strong
+            >Cost to raise a pig to market weight (90kg): KES 14,000 –
+            16,000</strong
+          >
+          <p class="muted">Includes feeds and veterinary care</p>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Feed Type</th>
+              <th>Price Range (KES)</th>
+              <th>Package Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pig Finishing Meal</td>
+              <td>KES 3,699 – 3,799</td>
+              <td>70kg bag</td>
+            </tr>
+            <tr>
+              <td>General Pig Feeds</td>
+              <td>KES 1,690 – 3,810</td>
+              <td>Varies by type</td>
+            </tr>
+            <tr>
+              <td>Custom Formulation</td>
+              <td>Contact for Quote</td>
+              <td>Bulk orders available</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Why Choose Our Feeds?</h2>
+        <ul>
+          <li>
+            <strong>Science-Based Formulations:</strong> Developed by nutrition
+            experts for optimal growth and health
+          </li>
+          <li>
+            <strong>Locally Sourced Ingredients:</strong> Supporting farmers
+            while maintaining quality
+          </li>
+          <li>
+            <strong>Cost-Effective:</strong> Competitive pricing with superior
+            feed conversion rates
+          </li>
+          <li>
+            <strong>Quality Assurance:</strong> All feeds tested for consistency
+            and nutritional content
+          </li>
+          <li>
+            <strong>Flexible Ordering:</strong> Custom formulations available
+            for large operations
+          </li>
+        </ul>
+
+        <a href="services.html" class="cta-link">← Back to Services</a>
+      </section>
+
+      <footer>&copy; 2026 Macharia Pig Farms — All rights reserved.</footer>
+    </main>
+  </body>
+</html>

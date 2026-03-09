@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Products & Services - Macharia Pig Farms</title>
+    <style>
+      :root {
+        --accent: #8b3e2f;
+        --muted: #6b7280;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+        line-height: 1.6;
+        color: #0f172a;
+        margin: 0;
+        background: var(--bg);
+      }
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e6e9ee;
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        color: var(--accent);
+      }
+      nav {
+        margin-left: auto;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 16px;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      /* Page hero */
+      .page-hero {
+        background: linear-gradient(135deg, var(--accent), #c85a54);
+        color: #fff;
+        padding: 40px 24px;
+        border-radius: 10px;
+        margin-top: 18px;
+      }
+      .page-hero h1 {
+        margin: 0 0 12px 0;
+        font-size: 2rem;
+      }
+      .page-hero p {
+        margin: 0;
+        font-size: 1.1rem;
+        opacity: 0.95;
+      }
+
+      /* Services grid */
+      .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 24px;
+      }
+      @media (min-width: 700px) {
+        .services-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .service-card {
+        background: #fff;
+        padding: 28px;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+        border-left: 4px solid var(--accent);
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+      }
+
+      .service-icon {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+      }
+
+      .service-card h2 {
+        margin: 0 0 12px 0;
+        font-size: 1.5rem;
+        color: var(--accent);
+      }
+
+      .service-card p {
+        margin: 0 0 16px 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .highlight {
+        background: #fff8f0;
+        padding: 12px;
+        border-radius: 6px;
+        border-left: 3px solid var(--accent);
+        margin-top: 12px;
+      }
+
+      .highlight strong {
+        color: var(--accent);
+      }
+
+      .cta-section {
+        background: #fff;
+        padding: 32px 24px;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 28px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+      }
+
+      .cta-section h2 {
+        margin: 0 0 16px 0;
+        color: var(--accent);
+      }
+
+      .cta-button {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.2s;
+        margin: 8px;
+      }
+
+      .cta-button:hover {
+        background: #6b3028;
+      }
+
+      footer {
+        margin: 28px 0 60px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap" style="display: flex; align-items: center">
+        <div class="brand">
+          <img
+            src="logo.png"
+            alt="Macharia's Farmhouse Logo"
+            style="height: 60px; width: auto"
+          />
+          <h1>Macharia Pig Farms</h1>
+        </div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="services.html">Products & Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="page-hero">
+        <h1>Products & Services</h1>
+        <p>
+          Premium solutions for successful pig farming — from superior breeding
+          stock to modern equipment and complete farm management support.
+        </p>
+      </section>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">🐷</div>
+          <h2>Quality Pig Breeds</h2>
+          <p>
+            We offer carefully selected and genetically superior pig breeds
+            optimized for high growth rates, feed efficiency, and meat quality.
+            Our breeding stock comes from proven bloodlines with documented
+            performance records.
+          </p>
+          <div class="highlight">
+            <strong>What we offer:</strong>
+            <ul style="margin: 8px 0; padding-left: 20px">
+              <li>Breeding sows and boars</li>
+              <li>Weaned piglets with vaccinations</li>
+              <li>Genetic consulting for herd improvement</li>
+              <li>Health certifications and documentation</li>
+            </ul>
+          </div>
+          <p style="margin-top: 12px">
+            <a
+              href="breeds.html"
+              style="
+                color: var(--accent);
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >Learn More →</a
+            >
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h2>Modern Tested Farming Equipment</h2>
+          <p>
+            Access to reliable, proven farming equipment that improves
+            productivity and animal welfare. We provide guidance on selecting
+            and maintaining equipment for optimal farm operations.
+          </p>
+          <div class="highlight">
+            <strong>Solutions include:</strong>
+            <ul style="margin: 8px 0; padding-left: 20px">
+              <li>Feeding systems and troughs</li>
+              <li>Housing and shelter solutions</li>
+              <li>Water and sanitation equipment</li>
+              <li>Equipment maintenance training</li>
+            </ul>
+          </div>
+          <p style="margin-top: 12px">
+            <a
+              href="equipment.html"
+              style="
+                color: var(--accent);
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >Learn More →</a
+            >
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🌾</div>
+          <h2>Quality Nutritional & Affordable Feeds</h2>
+          <p>
+            Formulated feeds designed to maximize growth, health, and
+            productivity. Our nutritional experts create balanced diets using
+            locally-sourced ingredients without compromising quality.
+          </p>
+          <div class="highlight">
+            <strong>Feed programs:</strong>
+            <ul style="margin: 8px 0; padding-left: 20px">
+              <li>Starter feed for piglets</li>
+              <li>Grower and finisher rations</li>
+              <li>Breeding herd nutrition plans</li>
+              <li>Cost-effective custom formulations</li>
+            </ul>
+          </div>
+          <p style="margin-top: 12px">
+            <a
+              href="feeds.html"
+              style="
+                color: var(--accent);
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >Learn More →</a
+            >
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">📊</div>
+          <h2>Business Management Support</h2>
+          <p>
+            Expert guidance on farm planning, financial management, and
+            production optimization. We help farmers build sustainable,
+            profitable operations through proven best practices.
+          </p>
+          <div class="highlight">
+            <strong>Management services:</strong>
+            <ul style="margin: 8px 0; padding-left: 20px">
+              <li>Farm planning and budgeting</li>
+              <li>Production record tracking</li>
+              <li>Market linkage support</li>
+              <li>Training and capacity building</li>
+            </ul>
+          </div>
+          <p style="margin-top: 12px">
+            <a
+              href="business-management.html"
+              style="
+                color: var(--accent);
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >Learn More →</a
+            >
+          </p>
+        </article>
+      </div>
+
+      <section class="cta-section" id="contact">
+        <h2>Ready to Transform Your Farm?</h2>
+        <p class="muted">
+          Contact us today for personalized solutions and competitive pricing on
+          all our products and services.
+        </p>
+        <a href="mailto:info@machariapigfarms.example" class="cta-button"
+          >Email Us</a
+        >
+        <a href="tel:+254700000000" class="cta-button">Call Now</a>
+      </section>
+
+      <footer>&copy; 2026 Macharia Pig Farms — All rights reserved.</footer>
+    </main>
+  </body>
+</html>

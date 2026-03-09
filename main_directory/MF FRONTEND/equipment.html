@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Modern Pig Farming Equipment - Macharia Pig Farms</title>
+    <style>
+      :root {
+        --accent: #8b3e2f;
+        --muted: #6b7280;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+        line-height: 1.6;
+        color: #0f172a;
+        margin: 0;
+        background: var(--bg);
+      }
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e6e9ee;
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        color: var(--accent);
+      }
+      nav {
+        margin-left: auto;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 16px;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      .page-hero {
+        background: linear-gradient(135deg, var(--accent), #c85a54);
+        color: #fff;
+        padding: 40px 24px;
+        border-radius: 10px;
+        margin-top: 18px;
+      }
+      .page-hero h1 {
+        margin: 0 0 12px 0;
+        font-size: 2rem;
+      }
+      .page-hero p {
+        margin: 0;
+        font-size: 1.1rem;
+        opacity: 0.95;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 24px 0;
+      }
+      @media (max-width: 600px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .gallery-img {
+        width: 100%;
+        height: 280px;
+        background: #e6e9ee;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .content {
+        background: #fff;
+        padding: 28px;
+        border-radius: 10px;
+        margin-top: 24px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+      }
+
+      .content h2 {
+        color: var(--accent);
+        margin-top: 28px;
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+      }
+      .content h2:first-child {
+        margin-top: 0;
+      }
+
+      .equipment-card {
+        background: #f8fafc;
+        padding: 20px;
+        border-left: 4px solid var(--accent);
+        margin: 16px 0;
+        border-radius: 4px;
+      }
+
+      .equipment-card h3 {
+        margin: 0 0 12px 0;
+        color: var(--accent);
+        font-size: 1.2rem;
+      }
+
+      .stat-box {
+        background: white;
+        border: 2px solid var(--accent);
+        padding: 16px;
+        border-radius: 6px;
+        margin: 12px 0;
+        text-align: center;
+      }
+
+      .stat-box .number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--accent);
+      }
+
+      .stat-box .label {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .benefit-list {
+        display: grid;
+        gap: 12px;
+        margin: 16px 0;
+      }
+
+      .benefit-item {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+
+      .benefit-item::before {
+        content: "✓";
+        color: var(--accent);
+        font-weight: bold;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+
+      .cta-link {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 24px;
+        transition: background 0.2s;
+      }
+
+      .cta-link:hover {
+        background: #6b3028;
+      }
+
+      footer {
+        margin: 28px 0 60px;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap" style="display: flex; align-items: center">
+        <div class="brand">
+          <img
+            src="logo.png"
+            alt="Macharia's Farmhouse Logo"
+            style="height: 60px; width: auto"
+          />
+          <h1>Macharia Pig Farms</h1>
+        </div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="page-hero">
+        <h1>Modern Pig Farming Equipment</h1>
+        <p>
+          Leverage cutting-edge technology to improve efficiency, animal
+          welfare, and profitability on your farm.
+        </p>
+      </section>
+
+      <div class="gallery">
+        <img
+          src="https://via.placeholder.com/500x280?text=Modern+Farm+Equipment"
+          alt="Modern farming equipment"
+          class="gallery-img"
+        />
+        <img
+          src="https://via.placeholder.com/500x280?text=Smart+Farming+Systems"
+          alt="Smart farming systems"
+          class="gallery-img"
+        />
+      </div>
+
+      <section class="content">
+        <h2>Scientific Benefits of Key Equipment</h2>
+        <p>
+          Modern technology aims to improve efficiency, animal welfare, and
+          profitability. Our equipment solutions are proven to deliver
+          measurable results.
+        </p>
+
+        <div class="equipment-card">
+          <h3>🤖 Automated Feeding Systems</h3>
+          <p>
+            Intelligent dispensers adjust portions based on individual weight
+            and nutritional needs.
+          </p>
+          <div class="stat-box">
+            <div class="number">40%</div>
+            <div class="label">Reduction in Labor Costs</div>
+          </div>
+          <div class="stat-box">
+            <div class="number">↑25%</div>
+            <div class="label">Improved Feed Conversion</div>
+          </div>
+          <p>
+            <strong>Benefits:</strong> Precision feeding ensures every pig
+            receives optimal nutrition, reducing waste and improving growth
+            rates.
+          </p>
+        </div>
+
+        <div class="equipment-card">
+          <h3>🌡️ Environmental Control Systems</h3>
+          <p>
+            Digital sensors monitor temperature and humidity 24/7, maintaining
+            optimal barn conditions.
+          </p>
+          <div class="stat-box">
+            <div class="number">↓25%</div>
+            <div class="label">Reduction in Mortality Rates</div>
+          </div>
+          <div class="stat-box">
+            <div class="number">↑30%</div>
+            <div class="label">Faster Growth Rates</div>
+          </div>
+          <p>
+            <strong>Impact:</strong> Maintaining optimal conditions leads to
+            faster growth, reduced stress, and better health outcomes.
+          </p>
+        </div>
+
+        <div class="equipment-card">
+          <h3>📹 Smart Monitoring & AI</h3>
+          <p>
+            Camera-based systems and AI detect early signs of disease and
+            observe animal behavior patterns.
+          </p>
+          <div class="stat-box">
+            <div class="number">30%</div>
+            <div class="label">Reduction in Vet Costs</div>
+          </div>
+          <p>
+            <strong>Benefit:</strong> Early detection prevents disease
+            outbreaks, reducing overall veterinary costs and animal losses.
+          </p>
+        </div>
+
+        <div class="equipment-card">
+          <h3>🛠️ Slat Flooring & Manure Management</h3>
+          <p>
+            Aluminum profiles maximize manure passage, keeping floors dry and
+            clean.
+          </p>
+          <p>
+            <strong>Advantage:</strong> Reduces ammonia buildup and respiratory
+            diseases caused by poor air quality in pig houses.
+          </p>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              Maintains dry, hygienic floor conditions
+            </div>
+            <div class="benefit-item">Reduces ammonia gas buildup</div>
+            <div class="benefit-item">Lowers respiratory disease incidence</div>
+            <div class="benefit-item">Improves overall animal welfare</div>
+          </div>
+        </div>
+
+        <h2>Our Equipment Solutions Include</h2>
+        <div class="benefit-list">
+          <div class="benefit-item">Feeding systems and automatic troughs</div>
+          <div class="benefit-item">Environmental monitoring and control</div>
+          <div class="benefit-item">Health monitoring systems</div>
+          <div class="benefit-item">Ventilation and cooling systems</div>
+          <div class="benefit-item">Flooring and drainage solutions</div>
+          <div class="benefit-item">Equipment maintenance training</div>
+        </div>
+
+        <a href="services.html" class="cta-link">← Back to Services</a>
+      </section>
+
+      <footer>&copy; 2026 Macharia Pig Farms — All rights reserved.</footer>
+    </main>
+  </body>
+</html>

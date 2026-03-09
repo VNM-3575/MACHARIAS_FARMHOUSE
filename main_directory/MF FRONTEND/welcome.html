@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Welcome — MACHARIA'S FARMHOUSE</title>
+    <style>
+      :root {
+        --accent: #8b3e2f;
+        --muted: #6b7280;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+        margin: 0;
+        background: var(--bg);
+        color: #0f172a;
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e6e9ee;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand h1 {
+        font-size: 1.1rem;
+        margin: 0;
+        color: var(--accent);
+      }
+      nav {
+        margin-left: auto;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        padding: 8px 10px;
+        border-radius: 6px;
+      }
+      nav a.primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .hero {
+        background: #fff;
+        margin-top: 18px;
+        padding: 28px;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+      }
+      .hero h2 {
+        margin: 0 0 8px 0;
+        color: var(--accent);
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .actions {
+        margin-top: 18px;
+        display: flex;
+        gap: 12px;
+      }
+      .btn {
+        padding: 10px 18px;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+      .btn.secondary {
+        background: #eef2f6;
+        color: var(--accent);
+      }
+      footer {
+        margin: 28px 0 60px;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap" style="display: flex; align-items: center">
+        <div class="brand">
+          <img
+            src="logo.png"
+            alt="Macharia's Farmhouse Logo"
+            style="height: 56px; width: auto"
+          />
+          <h1>MACHARIA'S FARMHOUSE</h1>
+        </div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="login.html" style="font-weight: 600">Login</a>
+          <a href="signup.html" class="primary">Sign Up</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h2>Welcome to MACHARIA'S FARMHOUSE</h2>
+        <p class="muted">
+          Macharia's Farmhouse (Macharia Pig Farms) is a family-run pig farm
+          focused on healthy, high-performing breeding stock, practical on-farm
+          support, and value-driven products such as tested farming equipment
+          and balanced feeds. We combine proven genetics, modern husbandry, and
+          business support to help farmers grow sustainably and profitably.
+        </p>
+
+        <div class="actions">
+          <a href="login.html" class="btn secondary">Login</a>
+          <a
+            href="signup.html"
+            class="btn"
+            style="background: var(--accent); color: #fff"
+            >Create an Account</a
+          >
+          <a
+            href="services.html"
+            class="btn"
+            style="background: #fff; border: 1px solid #e6e9ee"
+            >Explore Services</a
+          >
+        </div>
+
+        <p style="margin-top: 14px; font-size: 0.95rem" class="muted">
+          Creating an account lets you enquire about stock, request farm visits,
+          and receive product pricing and availability updates.
+        </p>
+      </section>
+
+      <section id="contact" style="margin-top: 18px">
+        <div
+          style="
+            background: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+          "
+        >
+          <h3 style="margin: 0; color: var(--accent)">Contact Us</h3>
+          <p class="muted">
+            Email: info@machariapigfarms.example • Phone: +254 7XX XXX XXX
+          </p>
+        </div>
+      </section>
+
+      <footer>&copy; 2026 Macharia Pig Farms — All rights reserved.</footer>
+    </main>
+  </body>
+</html>

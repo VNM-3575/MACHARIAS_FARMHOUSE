@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MACHARIA'S FARMHOUSE</title>
+    <link
+      rel="canonical"
+      href="https://machariasfarmhouseandbutchery.netlify.app/"
+    />
+    <style>
+      :root {
+        --accent: #8b3e2f;
+        --muted: #6b7280;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+        line-height: 1.6;
+        color: #0f172a;
+        margin: 0;
+        background: var(--bg);
+      }
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e6e9ee;
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        color: #000;
+        font-family: Georgia, "Palatino Linotype", serif;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: 2px;
+      }
+      nav {
+        margin-left: auto;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 16px;
+      }
+
+      /* Hero image section */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        margin-top: 18px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(8, 14, 26, 0.06);
+      }
+      .hero-img {
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+        background-position: center;
+      }
+      .hero-content {
+        padding: 20px;
+      }
+
+      /* Main grid */
+      .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+      @media (min-width: 850px) {
+        .main {
+          grid-template-columns: 1fr 360px;
+        }
+      }
+
+      /* Description */
+      .card {
+        background: #fff;
+        padding: 18px;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+      }
+      .card h2 {
+        margin-top: 0;
+        color: var(--accent);
+      }
+
+      /* Products & services */
+      .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      @media (min-width: 500px) {
+        .services {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .service {
+        padding: 12px;
+        border: 1px dashed #e6e9ee;
+        border-radius: 8px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.6),
+          transparent
+        );
+      }
+      .service h3 {
+        margin: 0 0 8px 0;
+        font-size: 1rem;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      footer {
+        margin: 28px 0 60px;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap" style="display: flex; align-items: center">
+        <div class="brand">
+          <img
+            src="logo.png.jpeg"
+            alt="Macharia's Farmhouse Logo"
+            style="height: 60px; width: auto"
+          />
+          <h1>MACHARIA'S FARMHOUSE</h1>
+        </div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="services.html">Products & Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="https://machariasfarmhouseandbutchery.netlify.app/"
+            target="_blank"
+            rel="noopener"
+            >Live</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <div
+          class="hero-img"
+          style="
+            background-image: url(&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABkAZADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWnN0dXZ3eHl6c3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXr/2gAMAwEAAhEDEQA/AOtKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==&quot;);
+          "
+          role="img"
+          aria-label="Macharia Pig Farms entrance and pasture"
+        ></div>
+        <div class="hero-content">
+          <h2 style="margin: 0 0 8px 0">MACHARIA'S FARMHOUSE</h2>
+          <h3 style="margin: 0 0 12px 0; color: var(--accent)">
+            SOW THE BEST, FORGET THE REST
+          </h3>
+          <p class="muted">
+            Locally raised pigs with careful husbandry, quality breeding stock,
+            and reliable farm services. We combine sustainable practices with
+            practical experience to deliver healthy animals and excellent
+            service.
+          </p>
+        </div>
+      </section>
+
+      <div class="main">
+        <article id="about" class="card">
+          <h2>About Us</h2>
+          <p>
+            Macharia's farmhouse is a modern family-owned farm and community
+            dedicated to raising healthy pigs for breeding and market. We focus
+            on animal welfare,technology intensive management, and sustainable
+            practices to provide high-quality stock and services to farmers and
+            customers in Kenya. clean facilities, and proven breeding lines to
+            help farmers and customers get consistent, high-quality stock.
+          </p>
+          <p class="muted">
+            Our staff are experienced in feeding regimes, disease prevention,
+            and biosecurity — ensuring animals are productive and well-cared
+            for.
+          </p>
+        </article>
+
+        <aside id="services" class="card">
+          <h2>Products & Services</h2>
+          <div class="services">
+            <div class="service">
+              <h3>Breeding Stock</h3>
+              <p class="muted">
+                Healthy sows and boars from selected bloodlines for improved
+                growth and feed conversion.
+              </p>
+            </div>
+            <div class="service">
+              <h3>Piglets for Sale</h3>
+              <p class="muted">
+                We wean and sell robust piglets with basic vaccinations and
+                starter feed guidance.
+              </p>
+            </div>
+            <div class="service">
+              <h3>Feed & Nutrition Advice</h3>
+              <p class="muted">
+                Practical feeding plans and locally-sourced feed options that
+                maximize growth and health.
+              </p>
+            </div>
+            <div class="service">
+              <h3>Consulting & On-Farm Support</h3>
+              <p class="muted">
+                On-site help for herd management, biosecurity, and improving
+                production practices.
+              </p>
+            </div>
+          </div>
+          <p style="margin-top: 12px">
+            <a
+              href="#contact"
+              style="color: var(--accent); text-decoration: none"
+              >Get in touch</a
+            >
+            for pricing and availability.
+          </p>
+        </aside>
+      </div>
+
+      <section id="contact" class="card" style="margin-top: 18px">
+        <h2>Contact</h2>
+        <p class="muted">
+          Email: machariasfarmhouse@gmail.com — Phone: +254 721206856
+        </p>
+        <p class="muted">
+          Visit us by appointment. We welcome buyers and partners to view the
+          farm.
+        </p>
+        <p class="muted">
+          Follow us:
+          <a
+            href="https://www.instagram.com/machariasfarmhouse/"
+            style="color: var(--accent); text-decoration: none"
+            >Instagram</a
+          >
+          —
+          <a
+            href="https://www.youtube.com/@MACHARIASFARMHOUSE"
+            style="color: var(--accent); text-decoration: none"
+            >YouTube</a
+          >
+        </p>
+      </section>
+
+      <footer>&copy; 2026 Macharia's Farmhouse — All rights reserved.</footer>
+    </main>
+  </body>
+</html>
