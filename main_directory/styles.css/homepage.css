@@ -147,3 +147,21 @@ footer {
   color: #7f8c8d;
   font-style: italic;
 }
+.owner-profile {
+  /* 1. Set the background image (adjust path if needed) */
+  background-image: url("main_directory\images-videos\dr david.jpeg");
+
+  /* 2. Scale the image to cover the entire div without stretching */
+  background-size: cover;
+
+  /* 3. Center the image both horizontally and vertically */
+  background-position: center;
+
+  /* 4. Do not tile the image */
+  background-repeat: no-repeat;
+  /* ADDED CODE ENDS HERE */
+
+  /* It's good practice to keep the solid background color 
+       as a fallback in case the image fails to load. */
+  background-color: #f9f9f9;
+}
