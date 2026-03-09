@@ -1,1 +1,7 @@
+[build]
+ #tell netlify where my files are
+ publish = "main_directory"
 
+[[redirects]]
+ from = "/'
+ to =""/home.html"
