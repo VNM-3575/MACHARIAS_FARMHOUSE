@@ -1,0 +1,21 @@
+{
+  "name": "mf-admin-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5173"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@tanstack/react-query": "^4.40.0",
+    "@tanstack/react-router": "^1.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "4.4.9"
+  }
+}

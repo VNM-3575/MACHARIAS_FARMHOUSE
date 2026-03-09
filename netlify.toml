@@ -1,5 +1,14 @@
 # Netlify configuration for MACHARIA'S FARMHOUSE admin app
 
+[build]
+  # Where your package.json / site code lives in GitHub
+  base = "frontend/" 
+  
+  # The command that generates your site
+  command = "npm run build"
+  
+  # The folder GitHub creates that Netlify should actually put online
+  publish = "frontend/dist
   
 [build]
   # We create the public folder, then move specific files to their final names

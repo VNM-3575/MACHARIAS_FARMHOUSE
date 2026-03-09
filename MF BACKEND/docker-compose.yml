@@ -1,0 +1,49 @@
+version: "3.8"
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: mf_db
+      MYSQL_USER: mf_user
+      MYSQL_PASSWORD: mf_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  backend:
+    build: .
+    depends_on:
+      - mysql
+    ports:
+      - "3000:3000"
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: mf_user
+      MYSQL_PASSWORD: mf_pass
+      MYSQL_DATABASE: mf_db
+      # Optional: provide an OpenAI API key to enable LLM-backed chatbot replies
+      # Example (on Linux/macOS): OPENAI_API_KEY="sk-..." docker compose up
+      OPENAI_API_KEY: ""
+      # Admin credentials for initial login (change in production)
+      ADMIN_USER: "admin"
+      ADMIN_PASS: "password"
+
+  analytics:
+    build:
+      context: .
+      dockerfile: analytics/Dockerfile
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: mf_user
+      MYSQL_PASSWORD: mf_pass
+      MYSQL_DATABASE: mf_db
+    ports:
+      - "5001:5001"
+
+volumes:
+  mysql-data:

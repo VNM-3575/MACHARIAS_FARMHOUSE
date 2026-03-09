@@ -1,0 +1,43 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+/.parcel-cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+pip-wheel-metadata/
+*.egg-info/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
+
+# Logs
+.log
+
+# Environment
+.env
+
+# Docker
+/.docker/
+docker-compose.override.yml
+
+# Misc
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Admin app node_modules
+admin-app/node_modules/

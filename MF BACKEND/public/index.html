@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MACHARIA'S FARMHOUSE</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(to bottom, #e8f5e9, #f0f8ff);
+        color: #222;
+        padding: 24px;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+      .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #2b5a2b 0%, #4a8a4a 100%);
+        color: #fff;
+        padding: 40px;
+        border-radius: 12px;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+      .banner h1 {
+        color: #fff;
+        margin: 0;
+        font-size: 2rem;
+      }
+      .banner .tree-emoji {
+        font-size: 4rem;
+        margin-right: 20px;
+      }
+      h1 {
+        margin-top: 0;
+        color: #2b5a2b;
+      }
+      .tagline {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 24px;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 32px 0;
+      }
+      .feature-card {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 5px solid #2b5a2b;
+        transition: transform 0.2s;
+      }
+      .feature-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .feature-card h3 {
+        margin-top: 0;
+        color: #2b5a2b;
+      }
+      .feature-card .emoji {
+        font-size: 1.8rem;
+        margin-right: 8px;
+      }
+      .cta {
+        background: #2b8aef;
+        color: #fff;
+        padding: 16px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        transition: background 0.2s;
+      }
+      .cta:hover {
+        background: #1f63d1;
+      }
+      .admin-section {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 2px solid #eee;
+      }
+      .admin-section h2 {
+        color: #2b5a2b;
+      }
+      .admin-link {
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="banner">
+        <span class="tree-emoji">🌲</span>
+        <h1>MACHARIA'S FARMHOUSE</h1>
+      </div>
+
+      <p class="tagline">Quality pig farming excellence.</p>
+      <p>
+        Welcome to MACHARIA'S FARMHOUSE — your complete backend for farm
+        operations, inventory management, and analytics.
+      </p>
+
+      <div class="features">
+        <div class="feature-card">
+          <h3><span class="emoji">📊</span>Analytics & Insights</h3>
+          <p>
+            Powerful data analysis with pandas and integration with Tableau for
+            visualization.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3><span class="emoji">💾</span>Secure Database</h3>
+          <p>
+            MySQL backend with role-based access control and admin
+            authentication.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3><span class="emoji">🤖</span>AI Chatbot</h3>
+          <p>Intelligent assistant powered by OpenAI for business queries.</p>
+        </div>
+        <div class="feature-card">
+          <h3><span class="emoji">🐳</span>Docker Ready</h3>
+          <p>Fully containerized with docker-compose for easy deployment.</p>
+        </div>
+      </div>
+
+      <div class="admin-section">
+        <h2>Admin Portal</h2>
+        <p class="admin-link">
+          <a href="/admin" class="cta">Enter Admin Panel</a>
+        </p>
+        <p style="color: #999; font-size: 0.9rem">
+          Manage farm operations, inventory, employee records, and view
+          analytics.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

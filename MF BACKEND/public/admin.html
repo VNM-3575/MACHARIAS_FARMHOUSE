@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MACHARIA'S FARMHOUSE — Admin</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(to bottom, #e8f5e9, #f0f8ff);
+        color: #222;
+        padding: 24px;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 24px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-top: 0;
+        color: #2b5a2b;
+      }
+      .field {
+        margin: 12px 0;
+      }
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      button {
+        background: #2b8aef;
+        color: #fff;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: #1f63d1;
+      }
+      .note {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 12px;
+      }
+      .links {
+        margin-top: 18px;
+      }
+      .links a {
+        color: #2b8aef;
+        text-decoration: none;
+        margin-right: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav style="margin-bottom: 12px">
+        <a
+          href="/"
+          style="margin-right: 12px; color: #2b8aef; text-decoration: none"
+          >🌲 Home</a
+        >
+        <a
+          href="/admin"
+          style="color: #2b8aef; text-decoration: none; font-weight: 600"
+          >Admin</a
+        >
+      </nav>
+      <h1>🐷 MACHARIA'S FARMHOUSE — Admin</h1>
+      <p class="note">Secure admin panel with role-based access control.</p>
+
+      <form id="adminForm" action="/admin/login" method="post">
+        <div class="field">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            autocomplete="username"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+          />
+        </div>
+        <div class="field">
+          <button type="submit">Sign in</button>
+        </div>
+      </form>
+
+      <div class="links">
+        <a href="/">Back to Home</a>
+      </div>
+      <p class="note" style="margin-top: 24px; font-size: 0.85rem; color: #999">
+        <strong>Default Credentials:</strong> username: <code>admin</code>,
+        password: <code>password</code>
+      </p>
+    </div>
+  </body>
+</html>
