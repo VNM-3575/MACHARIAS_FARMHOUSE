@@ -8,138 +8,7 @@
       rel="canonical"
       href="https://machariasfarmhouseandbutchery.netlify.app/"
     />
-    <style>
-      :root {
-        --accent: #8b3e2f;
-        --muted: #6b7280;
-        --bg: #f8fafc;
-      }
-      body {
-        font-family:
-          system-ui,
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          "Helvetica Neue",
-          Arial;
-        line-height: 1.6;
-        color: #0f172a;
-        margin: 0;
-        background: var(--bg);
-      }
-      header {
-        background: #fff;
-        border-bottom: 1px solid #e6e9ee;
-      }
-      .wrap {
-        max-width: 1024px;
-        margin: 0 auto;
-        padding: 24px;
-      }
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-      .brand h1 {
-        font-size: 1.25rem;
-        margin: 0;
-        color: #000;
-        font-family: Georgia, "Palatino Linotype", serif;
-        font-weight: 900;
-        font-style: italic;
-        letter-spacing: 2px;
-      }
-      nav {
-        margin-left: auto;
-      }
-      nav a {
-        color: var(--muted);
-        text-decoration: none;
-        margin-left: 16px;
-      }
-
-      /* Hero image section */
-      .hero {
-        display: flex;
-        flex-direction: column;
-        background: #fff;
-        margin-top: 18px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 6px 18px rgba(8, 14, 26, 0.06);
-      }
-      .hero-img {
-        width: 100%;
-        height: 320px;
-        background-size: cover;
-        background-position: center;
-      }
-      .hero-content {
-        padding: 20px;
-      }
-
-      /* Main grid */
-      .main {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 18px;
-        margin-top: 18px;
-      }
-      @media (min-width: 850px) {
-        .main {
-          grid-template-columns: 1fr 360px;
-        }
-      }
-
-      /* Description */
-      .card {
-        background: #fff;
-        padding: 18px;
-        border-radius: 10px;
-        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
-      }
-      .card h2 {
-        margin-top: 0;
-        color: var(--accent);
-      }
-
-      /* Products & services */
-      .services {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      @media (min-width: 500px) {
-        .services {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      .service {
-        padding: 12px;
-        border: 1px dashed #e6e9ee;
-        border-radius: 8px;
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.6),
-          transparent
-        );
-      }
-      .service h3 {
-        margin: 0 0 8px 0;
-        font-size: 1rem;
-      }
-      .muted {
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-
-      footer {
-        margin: 28px 0 60px;
-        color: var(--muted);
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="main_directory\styles.css\homepage.css" />
   </head>
   <body>
     <header>
@@ -172,11 +41,25 @@
         <div
           class="hero-img"
           style="
-            background-image: url(&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABkAZADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWnN0dXZ3eHl6c3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ygoaIjJCUmJygpKjM0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXr/2gAMAwEAAhEDEQA/AOtKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==&quot;);
+            background-image: url(main_directory\images-videos\logo2.png.jpeg);
           "
           role="img"
           aria-label="Macharia Pig Farms entrance and pasture"
         ></div>
+        <div class="owner-profile">
+          <h2>About the Owner</h2>
+          <div class="profile-content">
+            <h3>Dr. David Macharia</h3>
+            <p class="title">Specialist & Researcher in Animal Production</p>
+            <p class="description">
+              Dr. David Macharia is a dedicated researcher and specialist
+              focused on advancing animal production systems. His work
+              contributes to sustainable agricultural practices and innovation
+              in the field.
+            </p>
+          </div>
+        </div>
+
         <div class="hero-content">
           <h2 style="margin: 0 0 8px 0">MACHARIA'S FARMHOUSE</h2>
           <h3 style="margin: 0 0 12px 0; color: var(--accent)">
