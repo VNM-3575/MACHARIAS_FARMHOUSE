@@ -1,6 +1,6 @@
 [build]
  #tell netlify where my files are
- publish = "main_directory"
+ publish = "MF FRONTEND "
 
 [[redirects]]
  from = "/"
