@@ -8,7 +8,7 @@
 
 [build]
   # This tells Netlify to look inside 'main_directory' for your HTML and CSS
-  publish = "main_directory" 
+  publish = "main_directory/frontend" 
 
 [[redirects]]
   from = "/"
