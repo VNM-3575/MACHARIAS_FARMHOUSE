@@ -1,0 +1,167 @@
+:root {
+  --accent: #8b3e2f;
+  --muted: #6b7280;
+  --bg: #f8fafc;
+}
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  line-height: 1.6;
+  color: #0f172a;
+  margin: 0;
+  background: var(--bg);
+}
+header {
+  background: #fff;
+  border-bottom: 1px solid #e6e9ee;
+}
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #000;
+  font-family: Georgia, "Palatino Linotype", serif;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+nav {
+  margin-left: auto;
+}
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+/* Hero image section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin-top: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(8, 14, 26, 0.06);
+}
+.hero-img {
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+}
+.hero-content {
+  padding: 20px;
+}
+
+/* Main grid */
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+@media (min-width: 850px) {
+  .main {
+    grid-template-columns: 1fr 360px;
+  }
+}
+
+/* Description */
+.card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+.card h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+/* Products & services */
+.services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 500px) {
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.service {
+  padding: 12px;
+  border: 1px dashed #e6e9ee;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), transparent);
+}
+.service h3 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+}
+.muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+footer {
+  margin: 28px 0 60px;
+  color: var(--muted);
+  text-align: center;
+}
+.owner-profile {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.owner-profile h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.profile-content h3 {
+  margin: 10px 0 5px 0;
+}
+
+.profile-content .title {
+  font-weight: bold;
+  color: #7f8c8d;
+  font-style: italic;
+}
+.owner-profile {
+  /* 1. Set the background image (adjust path if needed) */
+  background-image: url("main_directory\images-videos\dr david.jpeg");
+
+  /* 2. Scale the image to cover the entire div without stretching */
+  background-size: cover;
+
+  /* 3. Center the image both horizontally and vertically */
+  background-position: center;
+
+  /* 4. Do not tile the image */
+  background-repeat: no-repeat;
+  /* ADDED CODE ENDS HERE */
+
+  /* It's good practice to keep the solid background color 
+       as a fallback in case the image fails to load. */
+  background-color: #f9f9f9;
+}
